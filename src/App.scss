@@ -1,3 +1,120 @@
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+
+.site-header {
+  width: 100%;
+  background: linear-gradient(160deg, #1e0a3c 0%, #3a1270 60%, #5b21b6 100%);
+  color: #fff;
+  text-align: center;
+  padding: 56px 24px;
+  box-sizing: border-box;
+
+  &__title {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    margin: 0 0 16px;
+    color: #fff;
+    line-height: 1;
+
+    @media (max-width: $bp-tablet) {
+      font-size: 48px;
+      letter-spacing: -1.5px;
+    }
+
+    @media (max-width: $bp-mobile) {
+      font-size: 36px;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @media (max-width: $bp-tablet) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $bp-mobile) {
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 32px;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+  }
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+  }
+
+  &__image {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    border-radius: 8px;
+    background: var(--accent-bg);
+
+    @media (max-width: $bp-mobile) {
+      width: 64px;
+      height: 64px;
+      min-width: 64px;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-h);
+    margin: 0 0 6px;
+    letter-spacing: -0.2px;
+  }
+
+  &__blurb {
+    font-size: 14px;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
