@@ -24,7 +24,7 @@ const navItems = [
   },
   {
     title: "Organisations",
-    blurb: "Discover local clubs, groups, and organisations near you.",
+    blurb: "Discover local community groups, and organisations near you.",
     path: "/organisations",
   },
   {
@@ -39,7 +39,7 @@ const navItems = [
   },
   {
     title: "About this site",
-    blurb: "Learn how this community hub works and how to get involved.",
+    blurb: "Learn how this site works and how to get involved.",
     path: "/about",
   },
 ];

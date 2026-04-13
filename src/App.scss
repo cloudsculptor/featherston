@@ -6,30 +6,30 @@ $bp-tablet: 768px;
   background: linear-gradient(160deg, #1e0a3c 0%, #3a1270 60%, #5b21b6 100%);
   color: #fff;
   text-align: center;
-  padding: 56px 24px;
+  padding: 14px 24px;
   box-sizing: border-box;
 
   &__title {
-    font-size: 72px;
+    font-size: 36px;
     font-weight: 700;
-    letter-spacing: -2.5px;
-    margin: 0 0 16px;
+    letter-spacing: -1px;
+    margin: 0 0 6px;
     color: #fff;
     line-height: 1;
 
     @media (max-width: $bp-tablet) {
-      font-size: 48px;
-      letter-spacing: -1.5px;
+      font-size: 26px;
+      letter-spacing: -0.5px;
     }
 
     @media (max-width: $bp-mobile) {
-      font-size: 36px;
-      letter-spacing: -1px;
+      font-size: 22px;
+      letter-spacing: 0;
     }
   }
 
   &__subtitle {
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.75);
     margin: 0;
@@ -37,11 +37,11 @@ $bp-tablet: 768px;
     text-transform: uppercase;
 
     @media (max-width: $bp-tablet) {
-      font-size: 18px;
+      font-size: 13px;
     }
 
     @media (max-width: $bp-mobile) {
-      font-size: 15px;
+      font-size: 12px;
       letter-spacing: 0.5px;
     }
   }
@@ -155,6 +155,7 @@ $bp-tablet: 768px;
 
 .page-content {
   padding: 40px 32px;
+  text-align: left;
 
   @media (max-width: $bp-tablet) {
     padding: 24px 16px;
@@ -162,6 +163,15 @@ $bp-tablet: 768px;
 
   h2 {
     margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 40px;
+    letter-spacing: -1px;
+
+    @media (max-width: $bp-tablet) {
+      font-size: 28px;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
   }
 }
 
