@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from '@mui/material/Button'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -27,6 +28,9 @@ function App() {
         >
           Count is {count}
         </button>
+        <Button variant="contained" color="secondary">
+          Material UI Button
+        </Button>
       </section>
 
       <div className="ticks"></div>
