@@ -47,7 +47,8 @@ export default function Header() {
         <DialogTitle>Sign up & Login</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            The ability to log in and directly contribute is coming soon.
+            <p>The ability to log in, as a verified, trusted member of the community is coming soon.</p>
+            <p>This will allow you to directly contribute to the store of community information on this site.</p>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
